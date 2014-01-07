@@ -1,6 +1,21 @@
 /*TITLE : My_frac4.1
  AUTHOR :  OBSIDIAN AND LOJILOJI
- WHAT IS THIS ?  : An advanced fraction calculator  */
+ WHAT IS THIS ?  : An advanced fraction calculator 
+                        /\
+  ___                  /  \                  ___
+ /   \     __         /    \         __     /
+/     \   /  \   _   / <()> \   _   /  \   /
+       \_/    \_/ \_/________\_/ \_/    \_/
+ __________________/__I___I___\________________
+                  /_I___I___I__\
+                 /I___I___I___I_\
+                /___I___I___I___I\
+               /__I___I___I___I___\
+              /_I___I___I___I___I__\
+             /I___I___I___I___I___I_\
+            /___I___I___I___I___I___I\
+           /__I___I___I___I___I___I___\
+          /_I___I___I___I___I___I___I__\   */
 
 #include <stdio.h>
 #include <stdlib.h>
