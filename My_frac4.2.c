@@ -10,7 +10,7 @@
                   /_I___I___I__\
                  /I___I___I___I_\
                 /___I___I___I___I\
-               /__I___I___I___I___\
+  Lojiloji     /__I___I___I___I___\   Obsidian
               /_I___I___I___I___I__\
              /I___I___I___I___I___I_\
             /___I___I___I___I___I___I\
@@ -33,8 +33,8 @@ int main(void)
 {
    //List
 
-   int operator;
-   operator = 0;
+   int operator ;
+   operator = 0 ;
 
     while (42) //Operator choice
    {
@@ -52,22 +52,22 @@ int main(void)
        switch(operator)
        {
         case 1:
-        add() ;
+        	add() ;
             break ;
         case 2:
-        substract() ;
+		 substract() ;
             break;
         case 3:
-        divide() ;
+		 divide() ;
             break ;
         case 4:
-        product() ;
+        	product() ;
             break;
         case 5:
-        exit(1) ;
+		 exit(1) ;
             break ;
         case 6:
-        printf(" \n You have been brave enough to press 6 the number of hell and demons! \n You may wanna know who we are.. this program have been code \n BY STOMATE PRODUCTION\n ") ;
+		 printf(" \n You have been brave enough to press 6 the number of hell and demons! \n You may wanna know who we are.. this program have been code \n BY STOMATE PRODUCTION\n ") ;
             break ;
        }
     else
@@ -91,7 +91,7 @@ void printA(int array[], int arrayL)
 
 void add()
 {
-    FILE  *flot = NULL ;
+    	FILE  *flot = NULL ;
 	float result1, result2,result3, frac11, frac12, frac21, frac22 ; // result1 = nom result   result2 den result
 
 	printf("\nNow, choose the fraction's terms !  ( float-enter*4 ) \n") ;
@@ -133,8 +133,8 @@ void substract()
         printf("\nNow, choose the fraction's terms !\n");
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
         result1 = frac11/frac12;
-        result2 = frac21/frac22;
-        result3 = result1-result2;
+	  result2 = frac21/frac22;
+            result3 = result1-result2;
         printf(" \n You wanted (%0.2f/%0.2f ) - (%0.2f/%0.2f)\n And the result is %0.2f-%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3);
 
 
@@ -159,45 +159,45 @@ void divide()
         printf("\nNow, choose the fraction's terms ! \n");
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
         result1 = frac11/frac12;
-        result2 = frac21/frac22;
-        result3 = result1/result2;
+	  result2 = frac21/frac22;
+	     result3 = result1/result2;
         printf(" \n You wanted (%0.2f/%0.2f ) / (%0.2f/%0.2f)\n And the result is %0.2f/%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3);
 
 
 //"Save" function
 
-	flot = fopen("OBSIDIAN HAS SAVED SOMETHING ON YOUR COMPUTER, MIGHT BE A VIRUS.txt", "a");
+	flot = fopen("OBSIDIAN HAS SAVED SOMETHING ON YOUR COMPUTER, MIGHT BE A VIRUS.txt", "a") ;
 	if ( flot != NULL )
 	{
 	  printf("\n Saved \n");
-	  fprintf(flot ,"You have done : %0.2f/%0.2f / %0.2f/%0.2f = %0.2f/%0.2f (In decimal : %0.2f) \n\n", frac11, frac12, frac21, frac22, result1, result2,result3);
+	  fprintf(flot ,"You have done : %0.2f/%0.2f / %0.2f/%0.2f = %0.2f/%0.2f (In decimal : %0.2f) \n\n", frac11, frac12, frac21, frac22, result1, result2,result3) ;
 	  fclose(flot);
 	}
     else
-    printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)");
+	 printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)") ;
 }
 
 void product()
 {
-    FILE  *flot = NULL;
-    float result1, result2, result3, frac11, frac12, frac21, frac22;
-        printf("\nNow, choose the fraction's terms !\n");
-        scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
-        result1 = frac11/frac12;
-        result2 = frac21/frac22;
-        result3 = result1*result2;
-        printf(" \n You wanted (%0.2f/%0.2f ) + (%0.2f/%0.2f)\n And the result is %0.2f*%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3);
+    FILE  *flot = NULL ;
+    float result1, result2, result3, frac11, frac12, frac21, frac22 ; 
+        printf("\nNow, choose the fraction's terms !\n") ;
+        scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22) ;
+	  result1 = frac11/frac12 ;
+	     result2 = frac21/frac22 ;
+		result3 = result1*result2 ;
+        printf(" \n You wanted (%0.2f/%0.2f ) + (%0.2f/%0.2f)\n And the result is %0.2f*%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3) ;
 
 
 //"Save" function
 
-	flot = fopen("OBSIDIAN HAS SAVED SOMETHING ON YOUR COMPUTER, MIGHT BE A VIRUS.txt", "a");
+	flot = fopen("OBSIDIAN HAS SAVED SOMETHING ON YOUR COMPUTER, MIGHT BE A VIRUS.txt", "a") ;
 	if ( flot != NULL )
 	{
-	  printf("\n Saved \n");
-	  fprintf(flot ,"You have done : %0.2f/%0.2f * %0.2f/%0.2f = %0.2f*%0.2f (In decimal : %0.2f) \n\n", frac11, frac12, frac21, frac22, result1, result2,result3);
-	  fclose(flot);
-	}
+	  printf("\n Saved \n") ;
+	  fprintf(flot ,"You have done : %0.2f/%0.2f * %0.2f/%0.2f = %0.2f*%0.2f (In decimal : %0.2f) \n\n", frac11, frac12, frac21, frac22, result1, result2,result3) ;
+	  fclose(flot) ;
+	} 
     else
-    printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)");
+    	printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)") ;
 }
