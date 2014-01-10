@@ -1,6 +1,6 @@
 /*TITLE : My_frac4.2
  AUTHOR :  OBSIDIAN AND LOJILOJI
- WHAT IS THIS ?  : An advanced fraction calculator 
+ WHAT IS THIS ?  : An advanced fraction calculator
                         /\
   ___                  /  \                  ___
  /   \     __         /    \         __     /
@@ -22,7 +22,7 @@
 
 ///PROTOTYPES
 
-void printA(int array[], int arrayL); //Array Prototype
+void printA(int array[3][7], int arrayL); //Array Prototype
 void add(); //operations prototypes, the save function is included in those functions, in order to save the operator.
 void substract();
 void product();
@@ -71,7 +71,7 @@ int main(void)
             break ;
        }
     else
-        printf("1,2,3,4 or 5!!! It's easy to remember right !?\n") ; 
+        printf("1,2,3,4 or 5!!! It's easy to remember right !?\n") ;
    }
     return 0 ;
 }
@@ -79,9 +79,9 @@ int main(void)
 
 ///FUNCTIONS
 
-void printA(int array[], int arrayL)
-{ 
-    int i; 
+void printA(int array[3][7], int arrayL)
+{
+    int i;
 
     for (i = 0 ; i < arrayL ; i++)
     {
@@ -107,7 +107,7 @@ void add()
 			{
 			    result1 = (frac11 * frac22) + (frac21*frac12) ; 	//le numerateur est  egal à (frac1.num)(frac2.den)+(frac2.num)(frac1.den)
 				result2 = frac12 * frac22 ;		//le denominateur  est  egal au produit des 2 autres
- 		 	    	   result3 = result1 / result2 ; 
+ 		 	    	   result3 = result1 / result2 ;
 				printf(" \n You wanted (%0.2f/%0.2f) + (%0.2f/%0.2f)\n And the result is %0.2f/%0.2f \n Or in decimal %0.2f\n ", frac11, frac12, frac21, frac22, result1, result2,result3);
 			}
 
@@ -180,7 +180,7 @@ void divide()
 void product()
 {
     FILE  *flot = NULL ;
-    float result1, result2, result3, frac11, frac12, frac21, frac22 ; 
+    float result1, result2, result3, frac11, frac12, frac21, frac22 ;
         printf("\nNow, choose the fraction's terms !\n") ;
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22) ;
 	  result1 = frac11/frac12 ;
@@ -197,7 +197,8 @@ void product()
 	  printf("\n Saved \n") ;
 	  fprintf(flot ,"You have done : %0.2f/%0.2f * %0.2f/%0.2f = %0.2f*%0.2f (In decimal : %0.2f) \n\n", frac11, frac12, frac21, frac22, result1, result2,result3) ;
 	  fclose(flot) ;
-	} 
+	}
     else
     	printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)") ;
 }
+
