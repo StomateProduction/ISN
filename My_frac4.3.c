@@ -22,11 +22,12 @@
 
 ///PROTOTYPES
 
-void printA(int array[3][7], int arrayL); //Array Prototype
+void printA(float array[3][7], int arrayL); //Array Prototype
 void add(); //operations prototypes, the save function is included in those functions, in order to save the operator.
 void substract();
 void product();
 void divide();
+void save(); //Save function, I don't know if it'll work.
 
 /// MAIN
 int main(void)
@@ -79,13 +80,15 @@ int main(void)
 
 ///FUNCTIONS
 
-void printA(int array[3][7], int arrayL)
+void printA(float array[3][7], int arrayL)
 {
     int i;
+    int j;
 
     for (i = 0 ; i < arrayL ; i++)
     {
-        printf("%d\n", array[i]) ;
+        for (j = 0; j < arrayL ;j++)
+        printf("%f\n", array[i][j]) ;
     }
 }
 
@@ -202,3 +205,7 @@ void product()
     	printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)") ;
 }
 
+void save()
+{
+ //Don't work, How should I do ? It doesn't accept anything, cannot save....
+}
