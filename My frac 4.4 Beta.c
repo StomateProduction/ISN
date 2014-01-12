@@ -1,4 +1,4 @@
-/*TITLE : My_frac4.2
+/*TITLE : My_frac4.4 BETA
  AUTHOR :  OBSIDIAN AND LOJILOJI
  WHAT IS THIS ?  : An advanced fraction calculator
                         /\
@@ -160,14 +160,14 @@ void save()
 {
     float p11,p12,p21,p22,pR1,pR2,pR3; //Pointeurs float
     char pc; // Pointeur char
-    p11 = &frac11;
+    p11 = &frac11; //Initialize
     p12 = &frac12;
     p21 = &frac21;
     p22 = &frac22;
     pR1 = &result1;
     pR2 = &result2;
     pR3 = &result3;
-    pc  = &operator;
+    pc  = &operator; //The NEW char, saving the operator much simply, wow, very useful !
 
 
     FILE  *flot = NULL ;
@@ -181,3 +181,4 @@ void save()
 	 else
 		 printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)");
 }
+
