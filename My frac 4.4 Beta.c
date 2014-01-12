@@ -167,7 +167,7 @@ void save()
     pR1 = &result1;
     pR2 = &result2;
     pR3 = &result3;
-    pc  = &operator; //The NEW char, saving the operator much simply, wow, very useful !
+    pc  = &operator; //The NEW char, saving the operator much simple, wow, very useful !
 
 
     FILE  *flot = NULL ;
