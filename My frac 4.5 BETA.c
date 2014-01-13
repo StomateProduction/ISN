@@ -22,7 +22,7 @@
 
 ///PROTOTYPES
 
-void printA( float array[3][7], int arrayL); //Array Prototype
+void printA( int array[3][7], int arrayL); //Array Prototype
 void add( int array[3][7] ); //operations prototypes
 void substract( int array[3][7] );
 void product( int array[3][7] );
@@ -96,6 +96,10 @@ void printA(int array[3][7], int arrayL)
 float add(int array[3][7])
 {
     float result1, result2,result3, frac11, frac12, frac21, frac22 ; // result1 = nom result   result2 den result
+    char operator,frac,operator2;
+    frac = '_';
+    operator = '+';
+    operator2 = '=';
 
         printf("\nNow, choose the fraction's terms !  ( float-enter*4 ) \n") ;
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
@@ -104,7 +108,8 @@ float add(int array[3][7])
 			    result1 = frac11 + frac21 ;	//le numerateur est egal a la somme des 2 autres numerateurs
 				result2 = frac12 ;		//le denominateur de la somme est egal au denominateur de frac1
         			    result3 = result1 / result2 ;
-				printf(" \n You wanted (%0.2f/%0.2f) + (%0.2f/%0.2f)\n And the result is %0.2f/%0.2f \n Or in decimal %0.2f\n ", frac11, frac12, frac21, frac22, result1, result2,result3);
+				int array[3][7] = {frac11,/*X = space)*/,frac21,X,result1}{frac,operator,frac,operator2,frac,operator2,result3}{frac12,X,frac22,X,result2}; //Affichage, 3 colonnes, 7 lignes, à remettre dans chaque fonction.
+    				printA(array[3][7]);
 				save();
 			}
 		else				//si les denominateurs ne sont pas egaux
@@ -112,8 +117,9 @@ float add(int array[3][7])
 			    result1 = (frac11 * frac22) + (frac21*frac12) ; 	//le numerateur est  egal à (frac1.num)(frac2.den)+(frac2.num)(frac1.den)
 				result2 = frac12 * frac22 ;		//le denominateur  est  egal au produit des 2 autres
  		 	    	   result3 = result1 / result2 ;
-				printf(" \n You wanted (%0.2f/%0.2f) + (%0.2f/%0.2f)\n And the result is %0.2f/%0.2f \n Or in decimal %0.2f\n ", frac11, frac12, frac21, frac22, result1, result2,result3);
-				save();
+			        int array[3][7] = {frac11,/*X = space)*/,frac21,X,result1}{frac,operator,frac,operator2,frac,operator2,result3}{frac12,X,frac22,X,result2};
+    			        printA(array[3][7]);
+			  	save();
 			}
 }
 
@@ -121,12 +127,18 @@ float add(int array[3][7])
 float substract(int array[3][7])
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22;
+    char operator,frac,operator2;
+    frac = '_';
+    operator = '-';
+    operator2 = '=';
+    
         printf("\nNow, choose the fraction's terms !\n");
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
     result1 = frac11/frac12;
     result2 = frac21/frac22;
     result3 = result1-result2;
-        printf(" \n You wanted (%0.2f/%0.2f ) - (%0.2f/%0.2f)\n And the result is %0.2f-%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3);
+    int array[3][7] = {frac11,/*X = space)*/,frac21,X,result1}{frac,operator,frac,operator2,frac,operator2,result3}{frac12,X,frac22,X,result2};
+    printA(array[3][7]);
         save();
 
 }
@@ -135,28 +147,40 @@ float substract(int array[3][7])
 float divide(int array[3][7])
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22;
+    char operator,frac,operator2;
+    frac = '_';
+    operator = '/';
+    operator2 = '=';
+    
         printf("\nNow, choose the fraction's terms ! \n");
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
     result1 = frac11/frac12;
     result2 = frac21/frac22;
     result3 = result1/result2;
-        printf(" \n You wanted (%0.2f/%0.2f ) / (%0.2f/%0.2f)\n And the result is %0.2f/%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3);
+    int array[3][7] = {frac11,/*X = space)*/,frac21,X,result1}{frac,operator,frac,operator2,frac,operator2,result3}{frac12,X,frac22,X,result2};
+    printA(array[3][7]); 
         save();
 }
 
 float product(int array[3][7])
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22 ;
+    char operator,frac,operator2;
+    frac = '_';
+    operator = '*';
+    operator2 = '=';
+    
         printf("\nNow, choose the fraction's terms !\n") ;
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22) ;
     result1 = frac11/frac12 ;
     result2 = frac21/frac22 ;
     result3 = result1*result2 ;
-        printf(" \n You wanted (%0.2f/%0.2f ) + (%0.2f/%0.2f)\n And the result is %0.2f*%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3) ;
+    int array[3][7] = {frac11,/*X = space)*/,frac21,X,result1}{frac,operator,frac,operator2,frac,operator2,result3}{frac12,X,frac22,X,result2};
+    printA(array[3][7]);
         save();
 }
 
-void save() // int array[3][7] can be put into, then you can print the array.
+void save() // int array[3][7] can be put into, then you can print the array but it's ugly.
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22 ; //Initialize again
     char operator; //Reinitialization
