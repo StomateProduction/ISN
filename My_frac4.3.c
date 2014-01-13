@@ -23,10 +23,10 @@
 ///PROTOTYPES
 
 void printA(float array[3][7], int arrayL); //Array Prototype
-void add(); //operations prototypes, the save function is included in those functions, in order to save the operator.
-void substract();
-void product();
-void divide();
+float add(); //operations prototypes, the save function is included in those functions, in order to save the operator.
+float substract();
+float product();
+float divide();
 
 
 /// MAIN
@@ -65,7 +65,7 @@ int main(void)
         	product() ;
             break;
         case 5:
-		 exit(1) ;
+		 exit(42) ;
             break ;
         case 6:
 		 printf(" \n You have been brave enough to press 6 the number of hell and demons! \n You may wanna know who we are.. this program have been code \n BY STOMATE PRODUCTION\n ") ;
@@ -92,7 +92,7 @@ void printA(float array[3][7], int arrayL)
     }
 }
 
-void add()
+float add()
 {
     	FILE  *flot = NULL ;
 	float result1, result2,result3, frac11, frac12, frac21, frac22 ; // result1 = nom result   result2 den result
@@ -129,7 +129,7 @@ void add()
 }
 
 
-void substract()
+float substract()
 {
     FILE  *flot = NULL;
     float result1, result2, result3, frac11, frac12, frac21, frac22;
@@ -155,7 +155,7 @@ void substract()
 }
 
 
-void divide()
+float divide()
 {
     FILE  *flot = NULL;
     float result1, result2, result3, frac11, frac12, frac21, frac22;
@@ -180,7 +180,7 @@ void divide()
 	 printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)") ;
 }
 
-void product()
+float product()
 {
     FILE  *flot = NULL ;
     float result1, result2, result3, frac11, frac12, frac21, frac22 ;
