@@ -164,7 +164,7 @@ void save(product,add,substract,divide)
 	if ( flot != NULL )
 		{
 		  printf("\n Saved \n");
-		  fprintf(flot ,"You have done : %0.2f/%0.2f %c %0.2f/%0.2f = %0.2f %c %0.2f (In decimal : %0.2f) \n\n", *frac11, *frac12, *operator ,*frac21, *frac22, *result1, *operator ,*result2,*result3);
+		  fprintf(flot ,"You have done : %0.2f/%0.2f %c %0.2f/%0.2f = %0.2f %c %0.2f (In decimal : %0.2f) \n\n", frac11, frac12, operator ,frac21, frac22, result1, operator ,result2,result3);
 		  fclose(flot);
 		}
 	 else
