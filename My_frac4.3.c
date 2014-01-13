@@ -27,7 +27,7 @@ void add(); //operations prototypes, the save function is included in those func
 void substract();
 void product();
 void divide();
-void save(); //Save function, I don't know if it'll work.
+
 
 /// MAIN
 int main(void)
@@ -203,9 +203,4 @@ void product()
 	}
     else
     	printf("The file couldn't be open. Error number 666. Ask an administrator about that : the error is certainly caused by something between the computer and the chair ;)") ;
-}
-
-void save()
-{
- //Don't work, How should I do ? It doesn't accept anything, cannot save....
 }
