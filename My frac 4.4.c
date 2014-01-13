@@ -1,4 +1,4 @@
-/*TITLE : My_frac4.4 BETA
+/*TITLE : My_frac 4.4
  AUTHOR :  OBSIDIAN AND LOJILOJI
  WHAT IS THIS ?  : An advanced fraction calculator
                         /\
@@ -22,11 +22,11 @@
 
 ///PROTOTYPES
 
-void printA(float array[3][7], int arrayL); //Array Prototype
-void add(); //operations prototypes
-void substract();
-void product();
-void divide();
+void printA( float array[3][7], int arrayL); //Array Prototype
+void add( int array[3][7] ); //operations prototypes
+void substract( int array[3][7] );
+void product( int array[3][7] );
+void divide( int array[3][7] );
 void save();
 
 /// MAIN
@@ -81,7 +81,7 @@ int main(void)
 
 ///FUNCTIONS
 
-void printA(float array[3][7], int arrayL)
+void printA(int array[3][7], int arrayL)
 {
     int i;
     int j;
@@ -93,7 +93,7 @@ void printA(float array[3][7], int arrayL)
     }
 }
 
-void add()
+float add()
 {
     float result1, result2,result3, frac11, frac12, frac21, frac22 ; // result1 = nom result   result2 den result
 
@@ -118,7 +118,7 @@ void add()
 }
 
 
-void substract()
+float substract()
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22;
         printf("\nNow, choose the fraction's terms !\n");
@@ -132,7 +132,7 @@ void substract()
 }
 
 
-void divide()
+float divide()
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22;
         printf("\nNow, choose the fraction's terms ! \n");
@@ -144,7 +144,7 @@ void divide()
         save();
 }
 
-void product()
+float product()
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22 ;
         printf("\nNow, choose the fraction's terms !\n") ;
@@ -156,8 +156,10 @@ void product()
         save();
 }
 
-void save()
+void save() //Does not save as an array, it's ugly. 
 {
+    float result1, result2, result3, frac11, frac12, frac21, frac22 ; //Initialize again
+    char operator; //Reinitialization
     float p11,p12,p21,p22,pR1,pR2,pR3; //Pointeurs float
     char pc; // Pointeur char
     p11 = &frac11; //Initialize
