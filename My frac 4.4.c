@@ -54,16 +54,16 @@ int main(void)
        switch(choice)
        {
         case 1:
-        	add() ;
+        	add(int array[3][7]) ;
             break ;
         case 2:
-		 substract() ;
+		 substract(int array[3][7]) ;
             break;
         case 3:
-		 divide() ;
+		 divide(int array[3][7]) ;
             break ;
         case 4:
-        	product() ;
+        	product(int array[3][7]) ;
             break;
         case 5:
 		 exit(42) ;
@@ -93,7 +93,7 @@ void printA(int array[3][7], int arrayL)
     }
 }
 
-float add()
+float add(int array[3][7])
 {
     float result1, result2,result3, frac11, frac12, frac21, frac22 ; // result1 = nom result   result2 den result
 
@@ -118,7 +118,7 @@ float add()
 }
 
 
-float substract()
+float substract(int array[3][7])
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22;
         printf("\nNow, choose the fraction's terms !\n");
@@ -132,7 +132,7 @@ float substract()
 }
 
 
-float divide()
+float divide(int array[3][7])
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22;
         printf("\nNow, choose the fraction's terms ! \n");
@@ -144,7 +144,7 @@ float divide()
         save();
 }
 
-float product()
+float product(int array[3][7])
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22 ;
         printf("\nNow, choose the fraction's terms !\n") ;
@@ -156,7 +156,7 @@ float product()
         save();
 }
 
-void save() //Does not save as an array, it's ugly. 
+void save() // int array[3][7] can be put into, then you can print the array.
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22 ; //Initialize again
     char operator; //Reinitialization
