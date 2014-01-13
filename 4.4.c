@@ -96,6 +96,8 @@ void printA(float array[3][7], int arrayL)
 float add()
 {
     float result1, result2,result3, frac11, frac12, frac21, frac22 ; // result1 = nom result   result2 den result
+    char operator;
+    operator = '+';
 
         printf("\nNow, choose the fraction's terms !  ( float-enter*4 ) \n") ;
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
@@ -121,6 +123,9 @@ float add()
 float substract()
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22;
+    char operator;
+    operator = '-';
+
         printf("\nNow, choose the fraction's terms !\n");
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
     result1 = frac11/frac12;
@@ -135,6 +140,9 @@ float substract()
 float divide()
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22;
+    char operator;
+    operator = '/';
+
         printf("\nNow, choose the fraction's terms ! \n");
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22);
     result1 = frac11/frac12;
@@ -147,6 +155,9 @@ float divide()
 float product()
 {
     float result1, result2, result3, frac11, frac12, frac21, frac22 ;
+    char operator;
+    operator = '*';
+
         printf("\nNow, choose the fraction's terms !\n") ;
         scanf("%f %f  %f %f", &frac11, &frac12, &frac21, &frac22) ;
     result1 = frac11/frac12 ;
