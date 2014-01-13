@@ -1,4 +1,4 @@
-/*TITLE : My_frac4.2
+/*TITLE : My_frac
  AUTHOR :  OBSIDIAN AND LOJILOJI
  WHAT IS THIS ?  : An advanced fraction calculator
                         /\
@@ -189,7 +189,7 @@ void product()
 	  result1 = frac11/frac12 ;
 	     result2 = frac21/frac22 ;
 		result3 = result1*result2 ;
-        printf(" \n You wanted (%0.2f/%0.2f ) + (%0.2f/%0.2f)\n And the result is %0.2f*%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3) ;
+        printf(" \n You wanted (%0.2f/%0.2f ) + (%0.2f/%0.2f)\n And the result is %0.2f/%0.2f \n Or in decimal %0.2f\n " , frac11, frac12, frac21, frac22, result1, result2,result3) ;
 
 
 //"Save" function
