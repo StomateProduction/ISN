@@ -1,0 +1,13 @@
+OBSIDIAN
+
+_Lauching the .exe (console) in Linux
+_Using "Launching GIF" with SDL delay and blitters.
+_Doing areas that can be clicked (stagess).
+->2 pages for the stages and 1/click launch the game (level 1). Other actions launch the editor(NDY).
+
+
+
+
+LOJILOJI
+
+_ THE GAME itself. Good luck (well, it's easy in reality, 2/3 of work and it's done).
